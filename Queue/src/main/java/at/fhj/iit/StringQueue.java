@@ -13,10 +13,12 @@ public class StringQueue implements Queue {
 	private List<String> elements = new ArrayList<String>();
 	private int maxSize = 5;
 
+	/** Constructor **/
 	public StringQueue(int maxSize){
 		maxSize = maxSize;
 	}
 	
+	/**  This method adds the "obj" element to the queue **/
 	@Override
 	public boolean offer(String obj) {
 		if(elements.size()!= maxSize)
@@ -27,6 +29,7 @@ public class StringQueue implements Queue {
 		return true;
 	}
 
+	/** This method returns the first element and deletes it **/
 	@Override
 	public String poll() {
 		String element = peek();
@@ -38,6 +41,7 @@ public class StringQueue implements Queue {
 		return element;
 	}
 
+	/** This element returns the first element and deletes it. If the queue is empty "NoSuchElementException" will be thrown  **/
 	@Override
 	public String remove() {
 		String element = poll();		
@@ -47,6 +51,7 @@ public class StringQueue implements Queue {
 		return element;
 	}
 
+	/** This method returns the first element **/
 	@Override
 	public String peek() {
 		String element;
@@ -58,6 +63,7 @@ public class StringQueue implements Queue {
 		return element;
 	}
 
+	/** This method returns the first element. If the queue is empty "NoSuchElementException" will be thrown  **/
 	@Override
 	public String element() {
 		String element = peek();

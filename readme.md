@@ -2,10 +2,6 @@
 
 # Lab Report #
 
---------------------------
-
-
------------------------
 ## Taskliste ##
 - [X] Taskliste in Readme einfügen
 - [X] Queue Vorlage in das Repository einspielen
@@ -19,15 +15,21 @@
 - [X] Vollständigkeit der Abgabe überprüfen
 - [X] Abgabe PDF Version
 
+## Vorgehen ##
 
-## Bugfixing im Code ##
+### Vorbereitung ###
+Treffen beim Lucas, Repository erstellen, Dokumentation vorbereiten, Angabe sorgfälltig durchlesen und Aufteilung der Arbeit.
+
+### Bugfixing im Code ###
  
 1. String poll() Zeile 34; "== 0"-Abfrage muss auf "!= 0" geändert werden ("> 0" funktioniert auch)
 2. String remove(); element bekommt einen Wert von der Poll Methode und wird sofort mit "" überschrieben -> "element = "";" entfernen
 3. Konstruktor Übergabeparameter maxsize -> S wird großgeschrieben
 
+![Screenshot vom verbesserten Code](./media/verbesserter_Code.jpg)
 
-## Javadoc Kommentare ##
+
+### Javadoc Kommentare ###
 Mittels ``/** **/`` bzw: ``/** */`` werden Kommentare vor jeder Methode erstellt.
 Wir versuchen gute, kurze, aussagekräftige Kommentare zu erstellen.
 
@@ -40,7 +42,7 @@ JavaDoc Result:
 
 ![Screenshot von JavaDoc](./media/javadoc.jpg)
 
-## JUint Tests ##
+### JUint Tests ###
 Erstellt wurden Test für jede Methode, wenn es Daten und und wenn sie keine Daten hat.
 Dabei wird jeder Schritt überprüft.
 @Before wird ausgeführt, vor dem test und @After nach dem Test
@@ -53,18 +55,18 @@ Result von den JUnit-Tests:
 ![Screenshot von den JUnit Test-Results](./media/unit_tests.jpg)
 
 
-## pom.xml ##
+### pom.xml ###
 Anpassung der Developer Informationen in der pom.xml. 
 Plugins für Maven Site und Javadoc wurden hinzugefügt.
 
-## Log4j Integration ##
+### Log4j Integration ###
 Zuerst wurde ein statischer Logger erstellt welcher in die Konsole schreibt. 
 Konfiguriert wurde der Logger in der pom.xml
 Eine Info Lognachricht wurde jeder Methode hinzugefügt und ggf um eine Error Lognachricht ergänzt
 
 ![Screenshot vom Logger-Code](./media/logger.jpg)
 
-## Pyhton / Java-Code ##
+### Pyhton / Java-Code ###
 GitHub-Flavor: 3 zeilen Python Code:
 ```
 print("Existing is pain")

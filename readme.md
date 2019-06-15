@@ -28,7 +28,7 @@
 
 
 ## Javadoc Kommentare ##
-Mittels ''/** **/'' bzw: ''/** */'' werden Kommentare vor jeder Methode erstellt.
+Mittels ``/** **/`` bzw: ``/** */`` werden Kommentare vor jeder Methode erstellt.
 Wir versuchen gute, kurze, aussagekräftige Kommentare zu erstellen.
 
 In Ecliipse gehen wir auf "Project Generate Java-Doc" um die Dokumentation zu generieren.

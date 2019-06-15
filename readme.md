@@ -61,7 +61,7 @@ Zuerst wurde ein statischer Logger erstellt welcher in die Konsole schreibt.
 Konfiguriert wurde der Logger in der pom.xml
 Eine Info Lognachricht wurde jeder Methode hinzugefügt und ggf um eine Error Lognachricht ergänzt
 
-## Pyhton / Java_Code ##
+## Pyhton / Java-Code ##
 GitHub-Flavor: 3 zeilen Python Code:
 ```
 print("Existing is pain")

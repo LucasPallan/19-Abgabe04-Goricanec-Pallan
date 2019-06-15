@@ -70,6 +70,7 @@ s = "String"
 x = 0
 ```
 
+In Java:
 ```
 System.out.println("Existing is pain");
 String s = "String";

@@ -33,16 +33,9 @@ Wir versuchen gute, kurze, aussagekräftige Kommentare zu erstellen.
 In Ecliipse gehen wir auf "Project Generate Java-Doc" um die Dokumentation zu generieren.
 Dann befindet sich die Doku im "Doc"-Order
 
+
 ## JUint Tests ##
-
-
-
-
-
-
-
-
-
+Erstellt wurden Test für jede Methode, wenn es Daten und und wenn sie keine Daten hat
 
 ## pom.xml ##
 Anpassung der Developer Informationen in der pom.xml. 

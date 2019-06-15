@@ -12,8 +12,8 @@
 - [X] Korrigieren des Source Codes
 - [X] Erstellung Klassen- und Methodenkommentare mittels Javadoc
 - [ ] Erstellung Junit Tests
-- [ ] Anpassung pom.xml
-- [ ] Log4j integrieren
+- [X] Anpassung pom.xml
+- [X] Log4j integrieren
 - [ ] Maven Size Dokumentation erstellen
 - [ ] Erstellung Markdown Lab Report
 - [ ] Vollständigkeit der Abgabe überprüfen
@@ -47,3 +47,9 @@ Dann befindet sich die Doku im "Doc"-Order
 ## pom.xml ##
 Anpassung der Developer Informationen in der pom.xml. 
 Plugins für Maven Site und Javadoc wurden hinzugefügt.
+
+## Log4j Integration ##
+Zuerst wurde ein statischer Logger erstellt welcher in die Konsole schreibt. 
+Konfiguriert wurde der Logger in der pom.xml
+Eine Info Lognachricht wurde jeder Methode hinzugefügt und ggf um eine Error Lognachricht ergänzt
+

@@ -26,7 +26,7 @@ Konstruktor Übergabeparameter maxsize -> S wird großgeschrieben
 String poll() Zeile 34; "== 0"-Abfrage muss auf "!= 0" geändert werden ("> 0" funktioniert auch)
 String remove(); element bekommt einen Wert von der Poll Methode und wird sofort mit "" überschrieben -> "element = "";" entfernen
 
-![Screenshot vom verbesserten Code](./media/verbesserter_Code.jpg)
+
 
 ## Javadoc Kommentare ##
 Mittels /** **/ werden Kommentare vor jeder Methode erstellt.
@@ -35,9 +35,22 @@ Wir versuchen gute, kurze, aussagekräftige Kommentare zu erstellen.
 In Ecliipse gehen wir auf "Project Generate Java-Doc" um die Dokumentation zu generieren.
 Dann befindet sich die Doku im "Doc"-Order
 
+![Screenshot von der javaDoc Generation](./media/javadoc_generation.jpg)
+
+JavaDoc Result:
+
+![Screenshot von JavaDoc](./media/javadoc.jpg)
 
 ## JUint Tests ##
 Erstellt wurden Test für jede Methode, wenn es Daten und und wenn sie keine Daten hat
+![Screenshot vom JUnit Test Code](./media/unit_test_code.jpg)
+
+Aufgeräumt sollte auch werden:
+![Screenshot vom JUnit Test cleanup](./media/unit_test_code_cleanup.jpg)
+
+Result von den JUnit-Tests:
+![Screenshot von den JUnit Test-Results](./media/unit_tests.jpg)
+
 
 ## pom.xml ##
 Anpassung der Developer Informationen in der pom.xml. 

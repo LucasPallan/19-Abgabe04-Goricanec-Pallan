@@ -26,6 +26,8 @@ Konstruktor Übergabeparameter maxsize -> S wird großgeschrieben
 String poll() Zeile 34; "== 0"-Abfrage muss auf "!= 0" geändert werden ("> 0" funktioniert auch)
 String remove(); element bekommt einen Wert von der Poll Methode und wird sofort mit "" überschrieben -> "element = "";" entfernen
 
+![Screenshot vom verbesserten Code](./media/verbesserter_Code.jpg)
+
 ## Javadoc Kommentare ##
 Mittels /** **/ werden Kommentare vor jeder Methode erstellt.
 Wir versuchen gute, kurze, aussagekräftige Kommentare zu erstellen.

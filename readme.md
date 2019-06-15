@@ -11,13 +11,13 @@
 - [X] Queue Vorlage in das Repository einspielen
 - [X] Korrigieren des Source Codes
 - [X] Erstellung Klassen- und Methodenkommentare mittels Javadoc
-- [ ] Erstellung Junit Tests
+- [X] Erstellung Junit Tests
 - [X] Anpassung pom.xml
 - [X] Log4j integrieren
 - [ ] Maven Size Dokumentation erstellen
-- [ ] Erstellung Markdown Lab Report
-- [ ] Vollständigkeit der Abgabe überprüfen
-- [ ] Abgabe PDF Version
+- [X] Erstellung Markdown Lab Report
+- [X] Vollständigkeit der Abgabe überprüfen
+- [X] Abgabe PDF Version
 
 
 ## Bugfixing im Code ##

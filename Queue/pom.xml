@@ -10,21 +10,32 @@
 
 	<developers>
 		<developer>
-		  <id>michaelulm</id>
-		  <name>Michael Ulm</name>
-		  <email>michael.ulm@fh-joanneum.at</email>
-		  <url>https://www.michael-ulm.at</url>
+		  <id>lucaspallan</id>
+		  <name>Lucas Pallan</name>
+		  <email>lucas.pallan@edu.fh-joanneum.at</email>
 		  <organization>FH JOANNEUM GmbH</organization>
 		  <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
 		  <roles>
-			<role>Lecturer</role>
+			<role>Student</role>
 		  </roles>
 		  <timezone>Europe/Vienna</timezone>
-		  <properties>
-			<picUrl>https://avatars2.githubusercontent.com/u/15637184</picUrl>
-		  </properties>
 		</developer>     
 	</developers>
+    
+    <developers>
+        <developer>
+            <id>michaelulm</id>
+            <name>Michael Ulm</name>
+            <email>michael.ulm@fh-joanneum.at</email>
+            <url>https://www.michael-ulm.at</url>
+            <organization>FH JOANNEUM GmbH</organization>
+            <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
+            <roles>
+                <role>Lecturer</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+        </developer>
+    </developers>
 	
     <build>
         <plugins>
@@ -32,12 +43,67 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
-                <configuration>
-                    <release>11</release>
-                </configuration>
+            </plugin>
+   
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
             </plugin>
         </plugins>
     </build>
+    
+    <reporting>
+        <plugins>
+           
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+           
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+          
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.1.0</version>
+                <reportSets>
+
+                    <reportSet>
+                        <reports>
+                            <report>javadoc</report>
+                            <report>test-javadoc</report>
+                        </reports>
+                    </reportSet>
+                    
+                    <reportSet>
+                        <id>aggregate</id>
+                        <inherited>false</inherited>
+                        <reports>
+                            <report>aggregate</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+         
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>3.0.0-M3</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+        </plugins>
+    </reporting>
 
     <dependencies>
         <dependency>
@@ -46,5 +112,32 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+      
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.11.2</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.11.2</version>
+        </dependency>
     </dependencies>
+    
+    <scm>
+        <connection>scm:git:https://github.com/PascalLuckhaus/19-Abgabe04-Luckhaus-Kienzl.git</connection>
+        <tag>HEAD</tag>
+        <url>https://github.com/PascalLuckhaus/19-Abgabe04-Luckhaus-Kienzl.git</url>
+    </scm>
+    
+    <licenses>
+        <license>
+            <name>MIT </name>
+            <url>https://github.com/PascalLuckhaus/19-Abgabe04-Luckhaus-Kienzl/blob/master/LICENSE</url>
+            <distribution>repo</distribution>
+            <comments>Shortest license, best license</comments>
+        </license>
+    </licenses>
 </project>

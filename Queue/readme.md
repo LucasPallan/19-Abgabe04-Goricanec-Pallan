@@ -44,4 +44,6 @@ Dann befindet sich die Doku im "Doc"-Order
 
 
 
-## LUCAS ##
+## pom.xml ##
+Anpassung der Developer Informationen in der pom.xml. 
+Plugins für Maven Site und Javadoc wurden hinzugefügt.

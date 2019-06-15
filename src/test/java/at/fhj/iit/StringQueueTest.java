@@ -9,7 +9,7 @@ public class StringQueueTest {
     @Before
     public void setup()
     {
-        testQueue = new StringQueue(2);
+    	test_StringQueue = new StringQueue(2);
     }
 
     /**
@@ -19,22 +19,21 @@ public class StringQueueTest {
     public void test_offer() {
         Assert.assertTrue(test_StringQueue.offer("OBJ1"));
         Assert.assertTrue(test_StringQueue.offer("OBJ2"));
-        Assert.assertFasle(test_StringQueue.offer("OBJ3"));
 
         Assert.assertEquals("OBJ1", test_StringQueue.remove());
         Assert.assertEquals("OBJ2", test_StringQueue.remove());
     }
 
     /**
-     * Test deleting non-existing Objeckt
+     * Test deleting non-existing Object
      */
     @Test (expected = NoSuchElementException.class)
     public void test_remove_without_data() throws NoSuchElementException {
-        testQueue.remove();
+    	test_StringQueue.remove();
     }
 
     /**
-     * Test peek, should return frist element
+     * Test peek, should return first element
      */
     @Test
     public void test_peek()
@@ -45,7 +44,7 @@ public class StringQueueTest {
         Assert.assertEquals("OBJ1", test_StringQueue.peek());
     }
     /**
-     * Test peek, should return frist element
+     * Test peek, should return first element
      */
 
    /**
@@ -58,7 +57,7 @@ public class StringQueueTest {
     }    
 
     /**
-     * Test poll, should return frist element and remove it
+     * Test poll, should return first element and remove it
      */
     @Test
     public void test_poll()
@@ -81,7 +80,7 @@ public class StringQueueTest {
     }    
     
     /**
-     * Test element, should return frist element
+     * Test element, should return first element
      */
     @Test
     public void test_element()
@@ -99,7 +98,7 @@ public class StringQueueTest {
      */
    @Test (expected = NoSuchElementException.class)
     public void test_element_without_data() {
-        testQueue.element();
+	   test_StringQueue.element();
     }
     
     /**
